@@ -1,0 +1,10 @@
+/* AddressPage specific styles */
+.success-message {
+  color: #155724;
+  padding: 12px;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  text-align: center;
+}

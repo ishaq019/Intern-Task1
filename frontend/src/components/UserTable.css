@@ -1,0 +1,125 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #f9f9f9;
+}
+
+td button {
+  margin: 2px;
+  padding: 6px 10px;
+  font-size: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+td button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+td button.danger {
+  background-color: #dc3545;
+}
+
+td button.danger:hover {
+  background-color: #c82333;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  font-size: 13px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.page-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  background-color: #e9f5ff;
+  border-radius: 4px;
+  font-weight: 500;
+  color: #0056b3;
+}
+
+.address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.address-list div {
+  padding: 6px;
+  background-color: #e7f3ff;
+  border-left: 3px solid #007bff;
+  border-radius: 3px;
+  font-size: 13px;
+}
+
+.no-address {
+  color: #999;
+  font-style: italic;
+  font-size: 13px;
+}
+
+.filter-badge {
+  display: inline-block;
+  background-color: #ff9800;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.no-results {
+  text-align: center;
+  padding: 30px !important;
+  color: #999;
+  font-style: italic;
+}
