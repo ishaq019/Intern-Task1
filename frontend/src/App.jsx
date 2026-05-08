@@ -1,14 +1,15 @@
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage.jsx";
 import AddressPage from "./pages/AddressPage.jsx";
 
 export default function App() {
   return (
-    <HashRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
-        <Route path="/Intern-Task1" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/add-address/:userId/:name" element={<AddressPage />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
