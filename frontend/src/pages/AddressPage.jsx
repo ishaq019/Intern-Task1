@@ -44,7 +44,7 @@ export default function AddressPage() {
       const data = await res.json();
       if (!res.ok) throw Error(data.message);
 
-      nav("/");
+      nav("/Intern-Task1");
     } catch (e) {
       setMsg(e.message);
     }
@@ -67,7 +67,7 @@ export default function AddressPage() {
 
         <button>{addressId ? "Update" : "Save"}</button>
 
-        <button type="button" onClick={() => nav("/")}>
+        <button type="button" onClick={() => nav("/Intern-Task1")}>
           Cancel
         </button>
       </form>

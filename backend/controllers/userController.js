@@ -27,10 +27,10 @@ export const getUsers = async (req, res) => {
     ? {
         $or: [
           { userID: regex },
-          { name: regex },
-          { phone: regex },
+          { name: regex },         
           { gender: regex },
           { address: regex },
+          { phone: regex },
           ...(!isNaN(search) ? [{ age: Number(search) }] : [])
         ]
       }
